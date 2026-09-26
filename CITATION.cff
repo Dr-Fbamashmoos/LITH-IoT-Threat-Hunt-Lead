@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated LITH manuscript."
+title: "LITH: Lightweight IoT Threat Hunter"
+version: 1.0.0
+type: software
+
+authors:
+  - family-names: Bamashmoos
+    given-names: Fatmah
+    affiliation: King Abdulaziz University
+  - family-names: Khairullah
+    given-names: Enas
+    affiliation: King Abdulaziz University
+
+repository-code: "https://github.com/Dr-Fbamashmoos/LITH-IoT-Threat-Hunt-Lead"
+license: MIT
