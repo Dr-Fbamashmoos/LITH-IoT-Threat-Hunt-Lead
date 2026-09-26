@@ -1,51 +1,32 @@
 # LITH: Lightweight IoT Threat Hunter
 
-This repository contains the code, controlled telemetry generator, representative data, and experimental outputs supporting the manuscript:
+This repository contains the code, representative synthetic dataset, experimental outputs, figures, and reproducibility materials supporting the manuscript:
 
-**LITH: A Lightweight Behavioral Anomaly-to-Hunt-Lead Framework for Resource-Constrained IoT Sensor Ecosystems**
+**LITH: A Lightweight Behavioral Anomaly-to-Hunt-Lead Framework for IoT Sensor Ecosystems**
 
-Authors:
-- Fatmah Bamashmoos
-- Enas Khairullah
-
-## Overview
-
-LITH is an anomaly-to-hunt-lead framework for IoT sensor ecosystems. It separates automated anomaly detection from downstream analyst or SIEM-supported threat investigation.
-
-The repository supports reproduction of the controlled synthetic experiments reported in the manuscript.
-
-## Repository Contents
-
-- `code/` — experimental implementation and telemetry generator
-- `data/seed42/` — representative synthetic dataset
-- `results/` — detector, sensitivity, statistical, and hunt-lead evaluation outputs
-- `figures/` — selected manuscript figures
-- `supplementary/` — complete supplementary package
-- `requirements.txt` — software dependencies
-
-## Experimental Setup
-
-The baseline experiment uses:
-
-- 10 Monte Carlo runs (seeds 42–51)
-- 50,000 benign observations per run
-- 5,000 test-only attack observations per run
-- device-class-specific benign-only model fitting
-- 60/20/20 temporal train/validation/test split
-- validation-based empirical percentile calibration
-
-Evaluated detectors:
-
-- Isolation Forest
-- One-Class SVM
-- shallow autoencoder
-- Max-Z statistical baseline
+Authors: Fatmah Bamashmoos and Enas Khairullah.
 
 ## Reproducibility
 
-The complete synthetic benchmark can be regenerated using the supplied generator and documented random seeds.
+The controlled benchmark uses benign-only fitting and validation calibration across 10 Monte Carlo seeds (42–51). Attack observations are excluded from scaling, model fitting, early stopping, and threshold calibration.
 
-Example:
+The main experiment can be reproduced using:
 
-```bash
-python code/run_lith_experiment_v4_udp_consistent.py
+`code/run_lith_experiment_v4_udp_consistent.py`
+
+A representative seed-42 synthetic dataset and supporting result archives are included.
+
+## Repository Contents
+
+- `code/` — experimental implementation
+- `data/` — representative synthetic data
+- `results/` — baseline, statistical, sensitivity, hunt-lead, and computational-footprint outputs
+- `figures/` — selected manuscript figures
+
+## Status
+
+This repository supports a manuscript currently under peer review. The current release corresponds to the revised experimental analysis.
+
+## License
+
+MIT License.
