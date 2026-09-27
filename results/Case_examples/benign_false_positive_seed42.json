@@ -1,0 +1,72 @@
+{
+  "seed": 42,
+  "device_class": "sensor",
+  "label": "benign",
+  "attack": null,
+  "raw_if_score": 0.5779781206579949,
+  "empirical_percentile": 0.9900990099009901,
+  "decision_threshold": 0.99,
+  "classified_as_anomalous": true,
+  "top4_changed_indicators": [
+    {
+      "feature": "unique_destination_ips",
+      "raw_value": 3.0,
+      "z_score": 5.570418560452701,
+      "abs_z": 5.570418560452701
+    },
+    {
+      "feature": "packet_size_std_bytes",
+      "raw_value": 49.75352574400804,
+      "z_score": 2.148294546920773,
+      "abs_z": 2.148294546920773
+    },
+    {
+      "feature": "cpu_utilization_pct",
+      "raw_value": 2.0047529057337514,
+      "z_score": -1.810113765526957,
+      "abs_z": 1.810113765526957
+    },
+    {
+      "feature": "udp_ratio",
+      "raw_value": 0.125,
+      "z_score": 0.6829858344053712,
+      "abs_z": 0.6829858344053712
+    }
+  ],
+  "all_features": {
+    "packet_count": {
+      "raw_value": 8.0,
+      "z_score": 0.3728337282405946
+    },
+    "mean_packet_size_bytes": {
+      "raw_value": 146.4917201726423,
+      "z_score": -0.01030730810848336
+    },
+    "packet_size_std_bytes": {
+      "raw_value": 49.75352574400804,
+      "z_score": 2.148294546920773
+    },
+    "unique_destination_ips": {
+      "raw_value": 3.0,
+      "z_score": 5.570418560452701
+    },
+    "udp_ratio": {
+      "raw_value": 0.125,
+      "z_score": 0.6829858344053712
+    },
+    "cpu_utilization_pct": {
+      "raw_value": 2.0047529057337514,
+      "z_score": -1.810113765526957
+    },
+    "memory_utilization_pct": {
+      "raw_value": 17.627622586564094,
+      "z_score": -0.2351868559183536
+    },
+    "process_count": {
+      "raw_value": 8.0,
+      "z_score": 0.008693574105122316
+    }
+  },
+  "selection_rule": "Benign test observation with the empirical percentile closest above 0.99 across device classes; equal-percentile cross-class ties resolved only for illustration by stable device/index order.",
+  "index_within_device_test_set": 1088
+}

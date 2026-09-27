@@ -1,0 +1,2 @@
+platform,python,logical_cpus_visible,torch_num_threads,benchmark_threads,batch_per_device,warmup_repeats,timed_repeats,timing_scope
+Linux-6.18.44-x86_64-with-glibc2.41,3.13.5,5,1,1,1000,10,100,StandardScaler transform plus raw detector scoring; percentile lookup/calibration excluded

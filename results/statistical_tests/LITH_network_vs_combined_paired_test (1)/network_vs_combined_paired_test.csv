@@ -1,0 +1,2 @@
+comparison,network_f1_mean,network_f1_sd,combined_f1_mean,combined_f1_sd,mean_f1_difference_network_minus_combined,ci95_low,ci95_high,paired_t_p,cohens_dz,wilcoxon_W,wilcoxon_p,shapiro_W_difference,shapiro_p_difference
+Network-only vs Combined,0.929192465625803,0.009125685440528232,0.928472980969947,0.003965797925164363,0.0007194846558559953,-0.0072437057548703655,0.008682675066582357,0.8425969015391509,0.06463343091899847,24.0,0.76953125,0.9356194959912293,0.5053753742709416

@@ -1,0 +1,8 @@
+{
+  "packet_count_integer": true,
+  "packet_count_at_least_1": true,
+  "unique_destination_ips_integer": true,
+  "unique_destination_ips_le_packet_count": true,
+  "udp_ratio_in_0_1": true,
+  "udp_ratio_implies_integer_udp_packet_count": true
+}

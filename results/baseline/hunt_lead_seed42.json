@@ -1,0 +1,34 @@
+{
+  "seed": 42,
+  "device_class": "sensor",
+  "attack_scenario": "ddos",
+  "anomaly_percentile": 1.0,
+  "decision_threshold_percentile": 0.99,
+  "raw_anomaly_score": 0.7592906549945451,
+  "changed_features": [
+    "udp_ratio",
+    "unique_destination_ips",
+    "packet_size_std_bytes",
+    "mean_packet_size_bytes"
+  ],
+  "raw_values": {
+    "packet_count": 21.0,
+    "mean_packet_size_bytes": 280.89142330417917,
+    "packet_size_std_bytes": 111.19216202470272,
+    "unique_destination_ips": 4.0,
+    "udp_ratio": 0.9047619047619048,
+    "cpu_utilization_pct": 7.343543669663839,
+    "memory_utilization_pct": 24.15125446154009,
+    "process_count": 11.0
+  },
+  "device_profile_z_scores": {
+    "packet_count": 5.605305354201653,
+    "mean_packet_size_bytes": 5.956418318966934,
+    "packet_size_std_bytes": 8.237705419654095,
+    "unique_destination_ips": 8.53466853940795,
+    "udp_ratio": 10.851717298134291,
+    "cpu_utilization_pct": 2.9276628553262176,
+    "memory_utilization_pct": 2.357877651960002,
+    "process_count": 2.6431099695967277
+  }
+}

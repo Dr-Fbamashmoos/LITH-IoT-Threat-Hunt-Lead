@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "exfil_detected_count": 1156,
+  "exfil_total": 1667,
+  "exfil_borderline_percentile": 0.9903990399039904,
+  "exfil_borderline_distance_above_threshold": 0.0003990399039903725,
+  "benign_false_positive_count": 94,
+  "benign_total": 10002,
+  "benign_borderline_percentile": 0.9900990099009901,
+  "benign_borderline_distance_above_threshold": 9.90099009900991e-05
+}

@@ -1,0 +1,72 @@
+{
+  "seed": 42,
+  "device_class": "camera",
+  "label": "attack",
+  "attack": "exfiltration",
+  "raw_if_score": 0.5601517181411318,
+  "empirical_percentile": 0.9903990399039904,
+  "decision_threshold": 0.99,
+  "classified_as_anomalous": true,
+  "top4_changed_indicators": [
+    {
+      "feature": "unique_destination_ips",
+      "raw_value": 5.0,
+      "z_score": 6.661816830923812,
+      "abs_z": 6.661816830923812
+    },
+    {
+      "feature": "cpu_utilization_pct",
+      "raw_value": 48.1032167171462,
+      "z_score": 3.7539749622908762,
+      "abs_z": 3.7539749622908762
+    },
+    {
+      "feature": "packet_count",
+      "raw_value": 1204.0,
+      "z_score": 2.1755676637273855,
+      "abs_z": 2.1755676637273855
+    },
+    {
+      "feature": "process_count",
+      "raw_value": 20.0,
+      "z_score": 1.0086027617779212,
+      "abs_z": 1.0086027617779212
+    }
+  ],
+  "all_features": {
+    "packet_count": {
+      "raw_value": 1204.0,
+      "z_score": 2.1755676637273855
+    },
+    "mean_packet_size_bytes": {
+      "raw_value": 1074.4744189613139,
+      "z_score": -0.0699509425841481
+    },
+    "packet_size_std_bytes": {
+      "raw_value": 157.15633361400015,
+      "z_score": -0.5158198775476623
+    },
+    "unique_destination_ips": {
+      "raw_value": 5.0,
+      "z_score": 6.661816830923812
+    },
+    "udp_ratio": {
+      "raw_value": 0.8363787375415282,
+      "z_score": -0.03368443997157472
+    },
+    "cpu_utilization_pct": {
+      "raw_value": 48.1032167171462,
+      "z_score": 3.7539749622908762
+    },
+    "memory_utilization_pct": {
+      "raw_value": 41.44756054523445,
+      "z_score": -0.14157599729720582
+    },
+    "process_count": {
+      "raw_value": 20.0,
+      "z_score": 1.0086027617779212
+    }
+  },
+  "selection_rule": "Detected exfiltration observation with the smallest empirical percentile above 0.99; if tied, the smallest raw Isolation Forest score.",
+  "index_within_attack_set": 1566
+}

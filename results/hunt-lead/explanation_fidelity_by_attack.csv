@@ -1,0 +1,4 @@
+attack,true_positive_leads,mean_indicator_fidelity,full_top4_fidelity_rate
+ddos,16669,0.9995350650908873,0.9981402603635491
+exfil,10926,1.0,1.0
+recon,16627,0.9865580080591808,0.9462320322367234

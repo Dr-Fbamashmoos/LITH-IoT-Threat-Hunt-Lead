@@ -1,0 +1,2 @@
+cpu_model,logical_cpus_visible,visible_memory_gb,platform,python,numpy,pandas,scipy,scikit_learn,pytorch,controlled_benchmark_threads,batch_size_per_device_class,device_classes_per_repetition,observations_per_repetition,warmup_repetitions,timed_repetitions,timing_scope
+INTEL(R) XEON(R) PLATINUM 8573C,5,5.8085784912109375,Linux-6.18.44-x86_64-with-glibc2.41,3.13.5,2.3.5,2.2.3,1.17.0,1.8.0,2.10.0+cpu,1,1000,3,3000,10,100,StandardScaler transform + raw anomaly scoring; empirical percentile lookup excluded
